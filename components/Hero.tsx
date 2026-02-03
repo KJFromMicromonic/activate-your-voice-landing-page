@@ -80,13 +80,34 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="flex justify-center">
-          <a 
-            href="https://luma.com/activateyourvoice" 
+          <a
+            href="https://luma.com/activateyourvoice"
             target="_blank"
             rel="noopener noreferrer"
             className="px-12 py-5 bg-[#00f2ff] text-[#05070a] font-bold font-orbitron tracking-widest hover:bg-white transition-all shadow-[0_0_30px_rgba(0,242,255,0.2)] hover:shadow-[0_0_50px_rgba(0,242,255,0.4)] uppercase"
           >
             SECURE ACCESS
+          </a>
+        </div>
+
+        {/* Backboard.io Feature */}
+        <div className="mt-16 flex flex-col items-center">
+          <span className="text-[10px] font-mono-space tracking-[0.3em] text-slate-500 uppercase mb-4">Memory Layer Powered By</span>
+          <a
+            href="https://backboard.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-3 p-6 border border-white/10 bg-white/[0.02] hover:border-[#7000ff]/50 hover:bg-[#7000ff]/5 transition-all duration-300"
+          >
+            <img
+              src="Partners/backboard.png"
+              alt="Backboard.io"
+              className="h-8 md:h-10 w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+            />
+            <div className="flex items-center gap-2">
+              <span className="px-2 py-1 bg-[#7000ff]/20 text-[#7000ff] text-[10px] font-mono-space tracking-wider">#1 LoCoMo Benchmark</span>
+              <span className="text-slate-500 text-xs font-mono-space">Best-in-Class Memory for AI Agents</span>
+            </div>
           </a>
         </div>
       </div>
