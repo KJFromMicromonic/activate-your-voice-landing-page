@@ -45,7 +45,7 @@ export const SPEAKERS: Speaker[] = [
     role: 'Research Scientist',
     company: 'Meta',
     bio: 'Deep learning researcher focusing on robust neural architectures and voice-driven agentic systems.',
-    image: 'https://picsum.photos/400/400?random=50',
+    image: 'https://ui-avatars.com/api/?name=Kartik+Ahuja&background=7000ff&color=fff&size=400&bold=true',
     socials: { twitter: '#', linkedin: '#' }
   },
   {
@@ -54,7 +54,7 @@ export const SPEAKERS: Speaker[] = [
     role: 'Product',
     company: 'Atlassian',
     bio: 'Leading strategic voice interface integration for next-generation collaborative enterprise tools.',
-    image: 'https://picsum.photos/400/400?random=51',
+    image: 'https://ui-avatars.com/api/?name=Ekta+Sengar&background=7000ff&color=fff&size=400&bold=true',
     socials: { twitter: '#', linkedin: '#' }
   },
   {
@@ -63,7 +63,7 @@ export const SPEAKERS: Speaker[] = [
     role: 'Solutions Lead',
     company: 'Speechmatics',
     bio: 'Expert in speech recognition and neural language modeling, bridging the gap between raw audio and actionable data.',
-    image: 'https://picsum.photos/400/400?random=52',
+    image: 'https://ui-avatars.com/api/?name=Edgar+Adamovics&background=7000ff&color=fff&size=400&bold=true',
     socials: { twitter: '#', linkedin: '#' }
   },
   {
@@ -72,7 +72,7 @@ export const SPEAKERS: Speaker[] = [
     role: 'Strategy & Innovation',
     company: 'PMU',
     bio: 'Driving technological literacy and fostering industrial partnerships to accelerate the adoption of frontier AI.',
-    image: 'https://picsum.photos/400/400?random=53',
+    image: 'https://ui-avatars.com/api/?name=Tharasan+Senthivel&background=7000ff&color=fff&size=400&bold=true',
     socials: { twitter: '#', linkedin: '#' }
   }
 ];
