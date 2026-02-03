@@ -79,19 +79,8 @@ const Hero: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex justify-center">
-          <a
-            href="https://luma.com/activateyourvoice"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-12 py-5 bg-[#00f2ff] text-[#05070a] font-bold font-orbitron tracking-widest hover:bg-white transition-all shadow-[0_0_30px_rgba(0,242,255,0.2)] hover:shadow-[0_0_50px_rgba(0,242,255,0.4)] uppercase"
-          >
-            SECURE ACCESS
-          </a>
-        </div>
-
         {/* Backboard.io Feature */}
-        <div className="mt-16 flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <span className="text-[10px] font-mono-space tracking-[0.3em] text-slate-500 uppercase mb-4">Memory Layer Powered By</span>
           <a
             href="https://backboard.io"
