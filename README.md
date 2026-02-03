@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Activate Your Voice
 
-# Run and deploy your AI Studio app
+A landing page for the **Activate Your Voice** hackathon - a collaboration between **The AI Collective Paris** and **Speechmatics**.
 
-This contains everything you need to run your app locally.
+## About the Event
 
-View your app in AI Studio: https://ai.studio/apps/drive/1mhKard-e7VQWknHGe2eVsiULNJQhlLVh
+A 24-hour hackathon focused on building the future of **Voice Agents** and neural dialogue systems. Join builders, engineers, and researchers in Paris to create innovative voice-powered AI solutions.
 
-## Run Locally
+- **Date:** February 28, 2026 @ 18:00
+- **Location:** 42 Ecole, Paris
+- **Registration:** [Register on Luma](https://luma.com/activateyourvoice)
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- **React 19** - UI Framework
+- **Vite** - Build Tool
+- **TypeScript** - Type Safety
+- **Tailwind CSS** - Styling
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Partners
+
+- [Speechmatics](https://www.speechmatics.com)
+- [Backboard.io](https://backboard.io)
+- [STATION F](https://www.stationf.co)
+
+## Links
+
+- [The AI Collective](https://www.aicollective.com/)
+- [Discord Community](https://discord.gg/sN6k5mtbXG)
+
+## License
+
+MIT
