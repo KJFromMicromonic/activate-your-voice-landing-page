@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <div className="mb-6">
               <img
-                src="Logos/AIC White.png"
+                src="Logos/AICWhite.png"
                 alt="The AI Collective Paris"
                 className="h-36 w-auto"
               />
