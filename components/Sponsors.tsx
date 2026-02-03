@@ -29,10 +29,10 @@ const Sponsors: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#00f2ff]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 
                 <div className="h-16 md:h-24 flex items-center justify-center mb-6 relative z-10 w-full px-4">
-                  <img 
-                    src={sponsor.logo} 
-                    alt={sponsor.name} 
-                    className="max-h-full max-w-full object-contain opacity-60 group-hover:opacity-100 transition-all duration-500 brightness-0 invert" 
+                  <img
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    className={`max-h-full max-w-full object-contain opacity-60 group-hover:opacity-100 transition-all duration-500 ${sponsor.name === 'STATION F' ? '' : 'brightness-0 invert'}`} 
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
