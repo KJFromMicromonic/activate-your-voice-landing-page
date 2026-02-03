@@ -104,9 +104,9 @@ const Hero: React.FC = () => {
               alt="Backboard.io"
               className="h-8 md:h-10 w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
             />
-            <div className="flex items-center gap-2">
-              <span className="px-2 py-1 bg-[#7000ff]/20 text-[#7000ff] text-[10px] font-mono-space tracking-wider">#1 LoCoMo Benchmark</span>
-              <span className="text-slate-500 text-xs font-mono-space">Best-in-Class Memory for AI Agents</span>
+            <div className="flex items-center gap-3">
+              <span className="px-3 py-1.5 bg-[#7000ff] text-white text-[11px] font-mono-space font-bold tracking-wider shadow-[0_0_15px_rgba(112,0,255,0.5)]">#1 LoCoMo Benchmark</span>
+              <span className="text-white text-sm font-mono-space font-medium">Best-in-Class Memory for AI Agents</span>
             </div>
           </a>
         </div>
