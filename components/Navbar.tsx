@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,6 +12,8 @@ const Navbar: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#05070a]/95 backdrop-blur-md border-b border-[#00f2ff]/30 py-3' : 'bg-transparent py-6'}`}>
@@ -71,8 +74,39 @@ const Navbar: React.FC = () => {
         </div>
         
         {/* Mobile menu icon */}
-        <div className="md:hidden text-[#00f2ff]">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        <button
+          className="md:hidden text-[#00f2ff] z-50"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {mobileMenuOpen ? (
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          ) : (
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`md:hidden fixed inset-0 bg-[#05070a]/98 backdrop-blur-lg z-40 transition-all duration-300 ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+        <div className="flex flex-col items-center justify-center h-full gap-8 font-mono-space text-lg tracking-widest">
+          <a href="#about" onClick={closeMobileMenu} className="hover:text-[#00f2ff] transition-colors uppercase">Mission</a>
+          <a href="#tracks" onClick={closeMobileMenu} className="hover:text-[#7000ff] transition-colors uppercase">Theme</a>
+          <a href="#speakers" onClick={closeMobileMenu} className="hover:text-[#00ff95] transition-colors uppercase">Judges</a>
+          <a href="#prizes" onClick={closeMobileMenu} className="hover:text-[#ff10f0] transition-colors uppercase">Rewards</a>
+          <a
+            href="https://luma.com/activateyourvoice"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMobileMenu}
+            className="mt-4 px-8 py-3 border border-[#00f2ff] text-[#00f2ff] hover:bg-[#00f2ff] hover:text-[#05070a] transition-all shadow-[0_0_10px_rgba(0,242,255,0.3)] font-bold tracking-widest"
+          >
+            REGISTER
+          </a>
         </div>
       </div>
     </nav>
