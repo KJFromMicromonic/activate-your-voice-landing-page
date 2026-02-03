@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           {/* Speechmatics Logo */}
           <div className="flex items-center h-6 md:h-8">
             <img
-              src="Logos/SM-Logo-main.b945b6cd.png"
+              src="Logos/Speechmatics.png"
               alt="Speechmatics"
               className="h-full w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-300 brightness-0 invert"
               onError={(e) => (e.currentTarget.className = 'hidden')}
