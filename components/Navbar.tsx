@@ -13,9 +13,22 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
+    <>
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#05070a]/95 backdrop-blur-md border-b border-[#00f2ff]/30 py-3' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Collaboration Logo Section */}
@@ -90,26 +103,27 @@ const Navbar: React.FC = () => {
           )}
         </button>
       </div>
-
-      {/* Mobile Menu */}
-      <div className={`md:hidden fixed inset-0 bg-[#05070a]/98 backdrop-blur-lg z-40 transition-all duration-300 ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-        <div className="flex flex-col items-center justify-center h-full gap-8 font-mono-space text-lg tracking-widest">
-          <a href="#about" onClick={closeMobileMenu} className="hover:text-[#00f2ff] transition-colors uppercase">Mission</a>
-          <a href="#tracks" onClick={closeMobileMenu} className="hover:text-[#7000ff] transition-colors uppercase">Theme</a>
-          <a href="#speakers" onClick={closeMobileMenu} className="hover:text-[#00ff95] transition-colors uppercase">Judges</a>
-          <a href="#prizes" onClick={closeMobileMenu} className="hover:text-[#ff10f0] transition-colors uppercase">Rewards</a>
-          <a
-            href="https://luma.com/activateyourvoice"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMobileMenu}
-            className="mt-4 px-8 py-3 border border-[#00f2ff] text-[#00f2ff] hover:bg-[#00f2ff] hover:text-[#05070a] transition-all shadow-[0_0_10px_rgba(0,242,255,0.3)] font-bold tracking-widest"
-          >
-            REGISTER
-          </a>
-        </div>
-      </div>
     </nav>
+
+    {/* Mobile Menu - Outside nav to prevent stacking context issues */}
+    <div className={`md:hidden fixed inset-0 bg-[#05070a]/98 backdrop-blur-lg z-40 transition-all duration-300 ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+      <div className="flex flex-col items-center justify-center h-full gap-8 font-mono-space text-lg tracking-widest">
+        <a href="#about" onClick={closeMobileMenu} className="hover:text-[#00f2ff] transition-colors uppercase">Mission</a>
+        <a href="#tracks" onClick={closeMobileMenu} className="hover:text-[#7000ff] transition-colors uppercase">Theme</a>
+        <a href="#speakers" onClick={closeMobileMenu} className="hover:text-[#00ff95] transition-colors uppercase">Judges</a>
+        <a href="#prizes" onClick={closeMobileMenu} className="hover:text-[#ff10f0] transition-colors uppercase">Rewards</a>
+        <a
+          href="https://luma.com/activateyourvoice"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={closeMobileMenu}
+          className="mt-4 px-8 py-3 border border-[#00f2ff] text-[#00f2ff] hover:bg-[#00f2ff] hover:text-[#05070a] transition-all shadow-[0_0_10px_rgba(0,242,255,0.3)] font-bold tracking-widest"
+        >
+          REGISTER
+        </a>
+      </div>
+    </div>
+    </>
   );
 };
 
