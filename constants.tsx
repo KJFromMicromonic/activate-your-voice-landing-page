@@ -51,10 +51,10 @@ export const SPEAKERS: Speaker[] = [
   {
     id: '2',
     name: 'Ekta Sengar',
-    role: 'Product',
+    role: 'Product Manager',
     company: 'Atlassian',
     bio: 'Leading strategic voice interface integration for next-generation collaborative enterprise tools.',
-    image: 'https://ui-avatars.com/api/?name=Ekta+Sengar&background=7000ff&color=fff&size=400&bold=true',
+    image: 'https://media.licdn.com/dms/image/v2/C5103AQGtISKK8l8WEg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1554705977611?e=1772064000&v=beta&t=JDIGdnAp7bvDBKggIEs8Uq3jrX5Py-XRPP3yujP9KUY',
     socials: { twitter: '#', linkedin: '#' }
   },
   {
