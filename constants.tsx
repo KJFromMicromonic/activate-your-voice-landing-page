@@ -41,10 +41,10 @@ export const SPONSORS: Sponsor[] = [
 export const SPEAKERS: Speaker[] = [
   {
     id: '1',
-    name: 'Kartik Ahuja',
+    name: 'Kartik Ahuja PhD',
     role: 'Research Scientist',
     company: 'Meta',
-    bio: 'Deep learning researcher focusing on robust neural architectures and voice-driven agentic systems.',
+    bio: 'I investigate the causal and optimization foundations of LLM generalization to design far more sample-efficient training paradigms.',
     image: 'https://ui-avatars.com/api/?name=Kartik+Ahuja&background=7000ff&color=fff&size=400&bold=true',
     socials: { linkedin: 'https://www.linkedin.com/in/kartik-ahuja/' }
   },
@@ -53,7 +53,7 @@ export const SPEAKERS: Speaker[] = [
     name: 'Ekta Sengar',
     role: 'Product Manager',
     company: 'Atlassian',
-    bio: 'Leading strategic voice interface integration for next-generation collaborative enterprise tools.',
+    bio: 'A developer-turned-PM with 10+ years of experience driving Product Led Growth in SaaS and IoT by fusing data-driven strategy with deep user empathy.',
     image: 'https://media.licdn.com/dms/image/v2/C5103AQGtISKK8l8WEg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1554705977611?e=1772064000&v=beta&t=JDIGdnAp7bvDBKggIEs8Uq3jrX5Py-XRPP3yujP9KUY',
     socials: { linkedin: 'https://www.linkedin.com/in/ektasengar/' }
   },
@@ -62,16 +62,16 @@ export const SPEAKERS: Speaker[] = [
     name: 'Edgars Adamovics',
     role: 'Developer Relations Specialist',
     company: 'Speechmatics',
-    bio: 'Expert in speech recognition and neural language modeling, bridging the gap between raw audio and actionable data.',
+    bio: 'A strategic Developer Relations leader who scales vibrant ecosystems and drives technical advocacy across AR, Game Dev, blockchain, and AI technologies.',
     image: 'https://ui-avatars.com/api/?name=Edgar+Adamovics&background=7000ff&color=fff&size=400&bold=true',
-    socials: { linkedin: 'www.linkedin.com/in/edgars-adamovics' }
+    socials: { linkedin: 'www.linkedin.com/in/edgars-adamovics/' }
   },
   {
     id: '4',
-    name: 'Tharsan Senthivel',
-    role: 'Strategy & Innovation',
+    name: 'Tharsan Senthivel PhD',
+    role: 'Lead AI',
     company: 'PMU',
-    bio: 'Driving technological literacy and fostering industrial partnerships to accelerate the adoption of frontier AI.',
+    bio: 'I bridge the gap between scientific AI excellence and business ROI to drive strategic organizational transformation and sustainable growth.',
     image: 'https://ui-avatars.com/api/?name=Tharasan+Senthivel&background=7000ff&color=fff&size=400&bold=true',
     socials: { linkedin: 'https://www.linkedin.com/in/tharsansenthivel/' }
   }
