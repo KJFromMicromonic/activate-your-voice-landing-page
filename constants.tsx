@@ -46,7 +46,7 @@ export const SPEAKERS: Speaker[] = [
     company: 'Meta',
     bio: 'Deep learning researcher focusing on robust neural architectures and voice-driven agentic systems.',
     image: 'https://ui-avatars.com/api/?name=Kartik+Ahuja&background=7000ff&color=fff&size=400&bold=true',
-    socials: { twitter: '#', linkedin: '#' }
+    socials: { linkedin: 'https://www.linkedin.com/in/kartik-ahuja/' }
   },
   {
     id: '2',
@@ -55,25 +55,25 @@ export const SPEAKERS: Speaker[] = [
     company: 'Atlassian',
     bio: 'Leading strategic voice interface integration for next-generation collaborative enterprise tools.',
     image: 'https://media.licdn.com/dms/image/v2/C5103AQGtISKK8l8WEg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1554705977611?e=1772064000&v=beta&t=JDIGdnAp7bvDBKggIEs8Uq3jrX5Py-XRPP3yujP9KUY',
-    socials: { twitter: '#', linkedin: '#' }
+    socials: { linkedin: 'https://www.linkedin.com/in/ektasengar/' }
   },
   {
     id: '3',
-    name: 'Edgar Adamovics',
-    role: 'Solutions Lead',
+    name: 'Edgars Adamovics',
+    role: 'Developer Relations Specialist',
     company: 'Speechmatics',
     bio: 'Expert in speech recognition and neural language modeling, bridging the gap between raw audio and actionable data.',
     image: 'https://ui-avatars.com/api/?name=Edgar+Adamovics&background=7000ff&color=fff&size=400&bold=true',
-    socials: { twitter: '#', linkedin: '#' }
+    socials: { linkedin: 'www.linkedin.com/in/edgars-adamovics' }
   },
   {
     id: '4',
-    name: 'Tharasan Senthivel',
+    name: 'Tharsan Senthivel',
     role: 'Strategy & Innovation',
     company: 'PMU',
     bio: 'Driving technological literacy and fostering industrial partnerships to accelerate the adoption of frontier AI.',
     image: 'https://ui-avatars.com/api/?name=Tharasan+Senthivel&background=7000ff&color=fff&size=400&bold=true',
-    socials: { twitter: '#', linkedin: '#' }
+    socials: { linkedin: 'https://www.linkedin.com/in/tharsansenthivel/' }
   }
 ];
 
