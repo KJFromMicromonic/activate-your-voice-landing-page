@@ -106,7 +106,7 @@ export const PRIZES: Prize[] = [
     id: '1',
     category: 'Monetary Awards',
     description: 'Direct funding to support the development of winning voice-agent prototypes.',
-    value: 'UPTO $3000',
+    value: 'UPTO €3300',
     isGrand: true
   },
   {
