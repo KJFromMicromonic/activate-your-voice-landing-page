@@ -63,7 +63,7 @@ export const SPEAKERS: Speaker[] = [
     role: 'Developer Relations Specialist',
     company: 'Speechmatics',
     bio: 'A strategic Developer Relations leader who scales vibrant ecosystems and drives technical advocacy across Immersive Tech, Game Dev, and AI technologies.',
-    image: 'https://ui-avatars.com/api/?name=Edgar+Adamovics&background=7000ff&color=fff&size=400&bold=true',
+    image: '/Partners/85f63cc9-17b5-4e7a-af3d-caa8b6d3c76a.jpeg',
     socials: { linkedin: 'https://www.linkedin.com/in/edgars-adamovics/' }
   },
   {
