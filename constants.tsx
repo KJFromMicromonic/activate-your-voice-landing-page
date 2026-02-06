@@ -44,8 +44,8 @@ export const SPEAKERS: Speaker[] = [
     name: 'Kartik Ahuja PhD',
     role: 'Research Scientist',
     company: 'Meta',
-    bio: 'I investigate the causal and optimization foundations of LLM generalization to design far more sample-efficient training paradigms.',
-    image: 'https://ui-avatars.com/api/?name=Kartik+Ahuja&background=7000ff&color=fff&size=400&bold=true',
+    bio: 'I investigate the foundations of LLM generalization to design far more sample-efficient training paradigms.',
+    image: '/Partners/Kartik-Ahuja.jpeg',
     socials: { linkedin: 'https://www.linkedin.com/in/kartik-ahuja/' }
   },
   {
@@ -54,7 +54,7 @@ export const SPEAKERS: Speaker[] = [
     role: 'Product Manager',
     company: 'Atlassian',
     bio: 'A developer-turned-PM with 10+ years of experience driving Product Led Growth in SaaS and IoT by fusing data-driven strategy with deep user empathy.',
-    image: 'https://media.licdn.com/dms/image/v2/C5103AQGtISKK8l8WEg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1554705977611?e=1772064000&v=beta&t=JDIGdnAp7bvDBKggIEs8Uq3jrX5Py-XRPP3yujP9KUY',
+    image: '/Partners/Ekta-Sengar.jpeg',
     socials: { linkedin: 'https://www.linkedin.com/in/ektasengar/' }
   },
   {
