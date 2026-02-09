@@ -71,8 +71,8 @@ export const SPEAKERS: Speaker[] = [
     name: 'Tharsan Senthivel PhD',
     role: 'Lead AI',
     company: 'PMU',
-    bio: 'I bridge the gap between scientific AI excellence and business ROI to drive strategic organizational transformation and sustainable growth.',
-    image: 'https://ui-avatars.com/api/?name=Tharasan+Senthivel&background=7000ff&color=fff&size=400&bold=true',
+    bio: 'A Lead AI driving the integration of AI within enterprise processes to transform technical innovation into scalable, high-impact business solutions.',
+    image: '/Partners/Tharsan.jpeg',
     socials: { linkedin: 'https://www.linkedin.com/in/tharsansenthivel/' }
   }
 ];
