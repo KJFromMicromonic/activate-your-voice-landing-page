@@ -58,35 +58,8 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Schedule Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
-          <div className="p-8 border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-colors">
-            <h3 className="text-[#7000ff] font-orbitron font-bold mb-4 tracking-widest">PHASE 01: START</h3>
-            <p className="text-white font-audiowide text-xl mb-2">SAT, FEB 28 @ 2:00PM</p>
-            <p className="text-slate-500 font-mono-space text-xs uppercase tracking-tight">Registration, Keynote & Team Formation</p>
-          </div>
-          <div className="p-8 border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-colors">
-            <h3 className="text-[#00f2ff] font-orbitron font-bold mb-4 tracking-widest">PHASE 02: THE VOID</h3>
-            <p className="text-white font-audiowide text-xl mb-2">SAT, FEB 28 - MAR 1</p>
-            <p className="text-slate-500 font-mono-space text-xs uppercase tracking-tight">24-Hour Intensive Development Cycle</p>
-          </div>
-          <div className="p-8 border border-[#00ff95]/30 bg-[#00ff95]/5 transition-colors">
-            <h3 className="text-[#00ff95] font-orbitron font-bold mb-4 tracking-widest">PHASE 03: JUDGMENT</h3>
-            <div className="space-y-4">
-              <div>
-                <p className="text-white font-audiowide text-xl">SUN, MAR 1 @ 5:00PM</p>
-                <p className="text-slate-500 font-mono-space text-xs uppercase">Hacking Ends & Demo Pitches</p>
-              </div>
-              <div>
-                <p className="text-[#00ff95] font-audiowide text-xl">SUN, MAR 1 @ 7:00PM</p>
-                <p className="text-slate-500 font-mono-space text-xs uppercase">Winner Announcement</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Detailed Schedule Section */}
-        <div className="mt-32">
+        <div>
           <GlitchText
             text="DETAILED SCHEDULE"
             tag="h2"
