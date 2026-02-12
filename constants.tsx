@@ -35,7 +35,15 @@ export const SPONSORS: Sponsor[] = [
     logo: 'Partners/StationF.png',
     tier: 'Platinum',
     url: 'https://www.stationf.co'
+  },
+  {
+    id: '4',
+    name: 'OpenAI',
+    logo: 'Partners/OpenAI.png',
+    tier: 'Platinum',
+    url: 'https://www.openai.com'
   }
+
 ];
 
 export const SPEAKERS: Speaker[] = [
@@ -74,6 +82,15 @@ export const SPEAKERS: Speaker[] = [
     bio: 'A Lead AI driving the integration of AI within enterprise processes to transform technical innovation into scalable, high-impact business solutions.',
     image: '/Partners/Tharsan.jpeg',
     socials: { linkedin: 'https://www.linkedin.com/in/tharsansenthivel/' }
+  },
+  {
+    id: '5',
+    name: 'Mohamed Ahmednah',
+    role: 'Founder & CTO',
+    company: 'Quicksort',
+    bio: ' AI Builder, Software Architect & Team Enabler Experienced in scaling engineering teams and implementing end-to-end Software and AI solutions across cloud and on-premise environments.',
+    image: 'https://media.licdn.com/dms/image/v2/D4E03AQE0zeV3pTztiQ/profile-displayphoto-scale_400_400/B4EZvYAKgJGgAk-/0/1768855481205?e=1772668800&v=beta&t=0GNc1wJg3IAIndAQThnbBQMLAT1BvGceRe1KbH4fNNs',
+    socials: { linkedin: 'https://www.linkedin.com/in/mohamed-ahmednah-19313116/' }
   }
 ];
 

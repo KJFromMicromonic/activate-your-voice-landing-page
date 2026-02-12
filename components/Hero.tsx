@@ -79,40 +79,61 @@ const Hero: React.FC = () => {
           ))}
         </div>
 
-        {/* Backboard.io Feature */}
-        <div className="flex flex-col items-center">
-          <span className="text-[10px] font-mono-space tracking-[0.3em] text-slate-500 uppercase mb-4">Memory Layer Powered By</span>
-          <a
-            href="https://backboard.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex flex-col items-center gap-3 p-6 border border-white/10 bg-white/[0.02] hover:border-[#7000ff]/50 hover:bg-[#7000ff]/5 transition-all duration-300"
-          >
-            <img
-              src="Partners/backboard.png"
-              alt="Backboard.io"
-              className="h-8 md:h-10 w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
-            />
-            <div className="flex items-center gap-3">
-              <span className="px-3 py-1.5 bg-[#7000ff] text-white text-[11px] font-mono-space font-bold tracking-wider shadow-[0_0_15px_rgba(112,0,255,0.5)]">#1 LoCoMo Benchmark</span>
-              <span className="text-white text-sm font-mono-space font-medium">Best-in-Class Memory for AI Agents</span>
-            </div>
-          </a>
-        </div>
-      </div>
+        {/* Partner Showcase Grid */}
+        <div className="flex flex-col items-center max-w-5xl mx-auto">
+          {/* Backboard.io Feature - Top */}
+          <div className="w-full mb-6">
+            <span className="text-[10px] font-mono-space tracking-[0.3em] text-slate-500 uppercase mb-4 block text-center">Memory Layer Powered By</span>
+            <a
+              href="https://backboard.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col items-center gap-3 p-6 border border-white/10 bg-white/[0.02] hover:border-[#7000ff]/50 hover:bg-[#7000ff]/5 transition-all duration-300 w-full"
+            >
+              <img
+                src="Partners/backboard.png"
+                alt="Backboard.io"
+                className="h-12 md:h-16 w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+              <div className="flex flex-col md:flex-row items-center gap-3">
+                <span className="px-3 py-1.5 bg-[#7000ff] text-white text-[11px] font-mono-space font-bold tracking-wider shadow-[0_0_15px_rgba(112,0,255,0.5)]">#1 LoCoMo Benchmark</span>
+                <span className="text-white text-sm font-mono-space font-medium">Best-in-Class Memory for AI Agents</span>
+              </div>
+            </a>
+          </div>
 
-      {/* Futuristic soundwave-like visual at the bottom */}
-      <div className="absolute bottom-0 w-full h-32 flex items-end justify-center gap-1 px-4 opacity-30 pointer-events-none">
-        {[...Array(60)].map((_, i) => (
-          <div 
-            key={i} 
-            className="w-1 bg-[#00f2ff]" 
-            style={{ 
-              height: `${20 + Math.random() * 80}%`,
-              animation: `pulse ${1 + Math.random() * 2}s ease-in-out infinite`
-            }}
-          ></div>
-        ))}
+          {/* Bottom Grid - OpenAI + 42 Entrepreneurs */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            {/* OpenAI */}
+            <a
+              href="https://openai.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center p-8 border border-white/10 bg-white/[0.02] hover:border-[#00f2ff]/50 hover:bg-[#00f2ff]/5 transition-all duration-300"
+            >
+              <img
+                src="Logos/OpenAI.svg"
+                alt="OpenAI"
+                className="h-16 md:h-20 w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </a>
+
+            {/* 42 Entrepreneurs - Co-Hosted By */}
+            <a
+              href="https://www.42entrepreneurs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col items-center justify-center gap-4 p-8 border border-white/10 bg-white/[0.02] hover:border-[#00ff95]/50 hover:bg-[#00ff95]/5 transition-all duration-300"
+            >
+              <span className="text-[10px] font-mono-space tracking-[0.3em] text-slate-500 uppercase">Co-Hosted By</span>
+              <img
+                src="Partners/42Entrepreneurs_White.png"
+                alt="42 Entrepreneurs"
+                className="h-16 md:h-20 w-auto opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
