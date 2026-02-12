@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         {/* Refined, static event info */}
         <div className="flex items-center justify-center gap-4 mb-8 text-xs font-mono-space tracking-[0.4em] text-[#00f2ff]/60 uppercase">
           <span className="w-8 h-px bg-[#00f2ff]/30"></span>
-          <span>42 ECOLE, PARIS // FEB 28 @ 18:00</span>
+          <span>ÉCOLE 42, PARIS // FEB 28 @ 15:00</span>
           <span className="w-8 h-px bg-[#00f2ff]/30"></span>
         </div>
         
@@ -56,8 +56,8 @@ const Hero: React.FC = () => {
         </div>
         
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-12 font-light leading-relaxed">
-          The premier <span className="text-white font-semibold">24-Hour Hackathon</span> in Paris. 
-          Architecting the future of <span className="text-[#7000ff] font-semibold">Voice Agents</span> and neural dialogue.
+          Architecting the future of Neural Dialogue <span className="text-white font-semibold">24-Hours</span> 
+          <span className="text-[#7000ff] font-semibold"> 100 Builders</span> <span className="text-[#F52727] font-semibold">€100,000 prize pool.</span>
         </p>
 
         {/* Countdown Timer - Refined Appearance */}

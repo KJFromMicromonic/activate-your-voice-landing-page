@@ -50,11 +50,11 @@ const Navbar: React.FC = () => {
           <span className="text-[#00f2ff] font-mono-space text-sm md:text-base animate-pulse mx-1">✕</span>
 
           {/* AI Collective Logo */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <img
-              src="Logos/Logo.png"
-              alt="The AI Collective" 
-              className="h-6 md:h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+              src="Logos/AICWhite.png"
+              alt="The AI Collective Paris"
+              className="h-20 md:h-20 w-35 opacity-90 group-hover:opacity-100 transition-opacity duration-300"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.style.display = 'none';
@@ -67,7 +67,6 @@ const Navbar: React.FC = () => {
                 }
               }}
             />
-            <span className="font-orbitron font-bold text-sm md:text-lg tracking-tighter group-hover:text-[#00f2ff] transition-colors uppercase hidden sm:inline">The AI Collective</span>
           </div>
         </div>
 

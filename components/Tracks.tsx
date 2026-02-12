@@ -39,7 +39,7 @@ const Tracks: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <GlitchText 
-            text="HACKATHON THEME" 
+            text="MISSION PROTOCOL" 
             tag="h2" 
             color="#00f2ff" 
             className="text-3xl md:text-5xl font-orbitron font-bold mb-4" 
