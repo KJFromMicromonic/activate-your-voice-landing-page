@@ -1,8 +1,14 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import GlitchText from './GlitchText';
 
 const About: React.FC = () => {
+  const [expandedPhase, setExpandedPhase] = useState<string | null>('phase1');
+
+  const togglePhase = (phase: string) => {
+    setExpandedPhase(expandedPhase === phase ? null : phase);
+  };
+
   return (
     <section id="about" className="py-32 relative overflow-hidden bg-[#05070a]">
       <div className="container mx-auto px-6">
@@ -68,12 +74,25 @@ const About: React.FC = () => {
           />
 
           {/* Phase 0: Preparation */}
-          <div className="mb-16 border border-[#7000ff]/30 bg-gradient-to-br from-[#7000ff]/5 to-transparent p-8 md:p-12 relative overflow-hidden">
+          <div className="mb-8 border border-[#7000ff]/30 bg-gradient-to-br from-[#7000ff]/5 to-transparent relative overflow-hidden">
             <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#7000ff] to-transparent"></div>
-            <h3 className="text-[#7000ff] font-orbitron font-bold text-2xl md:text-3xl mb-2 tracking-widest">PHASE 0: PREPARATION</h3>
-            <div className="h-px bg-gradient-to-r from-[#7000ff] to-transparent mb-8"></div>
+            <button
+              onClick={() => togglePhase('phase0')}
+              className="w-full p-8 md:p-12 text-left flex items-center justify-between hover:bg-[#7000ff]/5 transition-colors"
+            >
+              <div>
+                <h3 className="text-[#7000ff] font-orbitron font-bold text-2xl md:text-3xl mb-2 tracking-widest">PHASE 0: PREPARATION</h3>
+                <p className="text-slate-400 font-mono-space text-sm">Pre-event activities • Feb 23-26</p>
+              </div>
+              <span className={`text-[#7000ff] text-3xl transition-transform duration-300 ${expandedPhase === 'phase0' ? 'rotate-180' : ''}`}>
+                ⌄
+              </span>
+            </button>
 
-            <div className="space-y-6">
+            <div className={`overflow-hidden transition-all duration-500 ${expandedPhase === 'phase0' ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className="px-8 md:px-12 pb-8 md:pb-12">
+                <div className="h-px bg-gradient-to-r from-[#7000ff] to-transparent mb-8"></div>
+                <div className="space-y-6">
               <div className="border border-white/5 bg-white/[0.02] p-6 hover:border-[#7000ff]/30 transition-colors">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-2xl">📅</span>
@@ -121,15 +140,30 @@ const About: React.FC = () => {
                 </ul>
               </div>
             </div>
+              </div>
+            </div>
           </div>
 
           {/* Phase 1: Saturday */}
-          <div className="mb-16 border border-[#00f2ff]/30 bg-gradient-to-br from-[#00f2ff]/5 to-transparent p-8 md:p-12 relative overflow-hidden">
+          <div className="mb-8 border border-[#00f2ff]/30 bg-gradient-to-br from-[#00f2ff]/5 to-transparent relative overflow-hidden">
             <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#00f2ff] to-transparent"></div>
-            <h3 className="text-[#00f2ff] font-orbitron font-bold text-2xl md:text-3xl mb-2 tracking-widest">PHASE 1: SATURDAY, FEB 28</h3>
-            <div className="h-px bg-gradient-to-r from-[#00f2ff] to-transparent mb-8"></div>
+            <button
+              onClick={() => togglePhase('phase1')}
+              className="w-full p-8 md:p-12 text-left flex items-center justify-between hover:bg-[#00f2ff]/5 transition-colors"
+            >
+              <div>
+                <h3 className="text-[#00f2ff] font-orbitron font-bold text-2xl md:text-3xl mb-2 tracking-widest">PHASE 1: SATURDAY, FEB 28</h3>
+                <p className="text-slate-400 font-mono-space text-sm">Opening day • 2:00 PM - 11:00 PM</p>
+              </div>
+              <span className={`text-[#00f2ff] text-3xl transition-transform duration-300 ${expandedPhase === 'phase1' ? 'rotate-180' : ''}`}>
+                ⌄
+              </span>
+            </button>
 
-            <div className="space-y-4">
+            <div className={`overflow-hidden transition-all duration-500 ${expandedPhase === 'phase1' ? 'max-h-[3000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className="px-8 md:px-12 pb-8 md:pb-12">
+                <div className="h-px bg-gradient-to-r from-[#00f2ff] to-transparent mb-8"></div>
+                <div className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
                 <div className="text-[#00f2ff] font-audiowide text-lg">2:00 PM – 3:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Check-in & welcome coffee</div>
@@ -193,15 +227,30 @@ const About: React.FC = () => {
                 <div className="text-slate-300 font-mono-space">Venue closes</div>
               </div>
             </div>
+              </div>
+            </div>
           </div>
 
           {/* Phase 2: Sunday */}
-          <div className="mb-16 border border-[#00ff95]/30 bg-gradient-to-br from-[#00ff95]/5 to-transparent p-8 md:p-12 relative overflow-hidden">
+          <div className="mb-8 border border-[#00ff95]/30 bg-gradient-to-br from-[#00ff95]/5 to-transparent relative overflow-hidden">
             <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#00ff95] to-transparent"></div>
-            <h3 className="text-[#00ff95] font-orbitron font-bold text-2xl md:text-3xl mb-2 tracking-widest">PHASE 2: SUNDAY, MARCH 1</h3>
-            <div className="h-px bg-gradient-to-r from-[#00ff95] to-transparent mb-8"></div>
+            <button
+              onClick={() => togglePhase('phase2')}
+              className="w-full p-8 md:p-12 text-left flex items-center justify-between hover:bg-[#00ff95]/5 transition-colors"
+            >
+              <div>
+                <h3 className="text-[#00ff95] font-orbitron font-bold text-2xl md:text-3xl mb-2 tracking-widest">PHASE 2: SUNDAY, MARCH 1</h3>
+                <p className="text-slate-400 font-mono-space text-sm">Final day • 9:00 AM - 8:00 PM • Demos & Awards</p>
+              </div>
+              <span className={`text-[#00ff95] text-3xl transition-transform duration-300 ${expandedPhase === 'phase2' ? 'rotate-180' : ''}`}>
+                ⌄
+              </span>
+            </button>
 
-            <div className="space-y-4">
+            <div className={`overflow-hidden transition-all duration-500 ${expandedPhase === 'phase2' ? 'max-h-[4000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className="px-8 md:px-12 pb-8 md:pb-12">
+                <div className="h-px bg-gradient-to-r from-[#00ff95] to-transparent mb-8"></div>
+                <div className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
                 <div className="text-[#00ff95] font-audiowide text-lg">9:00 AM</div>
                 <div className="text-slate-300 font-mono-space">Check-in and coffee</div>
@@ -267,6 +316,8 @@ const About: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
                 <div className="text-[#00ff95] font-audiowide text-lg">7:00 PM – 8:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Cocktail celebration</div>
+              </div>
+            </div>
               </div>
             </div>
           </div>
