@@ -35,15 +35,7 @@ export const SPONSORS: Sponsor[] = [
     logo: 'Partners/StationF.png',
     tier: 'Platinum',
     url: 'https://www.stationf.co'
-  },
-  {
-    id: '4',
-    name: 'OpenAI',
-    logo: 'Partners/OpenAI.png',
-    tier: 'Platinum',
-    url: 'https://www.openai.com'
   }
-
 ];
 
 export const SPEAKERS: Speaker[] = [

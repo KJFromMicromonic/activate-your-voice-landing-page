@@ -109,8 +109,9 @@ const Hero: React.FC = () => {
               href="https://openai.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center p-8 border border-white/10 bg-white/[0.02] hover:border-[#00f2ff]/50 hover:bg-[#00f2ff]/5 transition-all duration-300"
+              className="group flex flex-col items-center justify-center gap-4 p-8 border border-white/10 bg-white/[0.02] hover:border-[#00f2ff]/50 hover:bg-[#00f2ff]/5 transition-all duration-300"
             >
+              <span className="text-[10px] font-mono-space tracking-[0.3em] text-slate-500 uppercase">Supported By</span>
               <img
                 src="Logos/OpenAI.svg"
                 alt="OpenAI"
