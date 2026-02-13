@@ -32,12 +32,12 @@ const Navbar: React.FC = () => {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#05070a]/95 backdrop-blur-md border-b border-[#00f2ff]/30 py-3' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Collaboration Logo Section */}
-        <div 
-          className="flex items-center gap-3 md:gap-4 group cursor-pointer" 
+        <div
+          className="flex items-center gap-2 md:gap-4 group cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           {/* Speechmatics Logo */}
-          <div className="flex items-center h-6 md:h-8">
+          <div className="flex items-center h-5 md:h-8">
             <img
               src="Logos/Speechmatics.png"
               alt="Speechmatics"
@@ -47,14 +47,14 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Separator */}
-          <span className="text-[#00f2ff] font-mono-space text-sm md:text-base animate-pulse mx-1">✕</span>
+          <span className="text-[#00f2ff] font-mono-space text-xs md:text-base animate-pulse mx-0.5 md:mx-1">✕</span>
 
           {/* AI Collective Logo */}
           <div className="flex items-center">
             <img
               src="Logos/AICHeader.png"
               alt="The AI Collective Paris"
-              className="h-15 md:h-12 w-35 opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+              className="h-8 md:h-12 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-300"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.style.display = 'none';
