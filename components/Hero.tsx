@@ -40,13 +40,6 @@ const Hero: React.FC = () => {
       </div>
       
       <div className="relative z-10 container mx-auto px-6 text-center">
-        {/* Refined, static event info */}
-        <div className="flex items-center justify-center gap-4 mb-8 text-xs font-mono-space tracking-[0.4em] text-[#00f2ff]/60 uppercase">
-          <span className="w-8 h-px bg-[#00f2ff]/30"></span>
-          <span>ÉCOLE 42, PARIS // FEB 28 @ 15:00</span>
-          <span className="w-8 h-px bg-[#00f2ff]/30"></span>
-        </div>
-        
         <div className="mb-6">
           <GlitchText 
             text="ACTIVATE YOUR VOICE" 

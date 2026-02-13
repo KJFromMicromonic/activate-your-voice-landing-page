@@ -52,9 +52,9 @@ const Navbar: React.FC = () => {
           {/* AI Collective Logo */}
           <div className="flex items-center">
             <img
-              src="Logos/AICWhite.png"
+              src="Logos/AICHeader.png"
               alt="The AI Collective Paris"
-              className="h-20 md:h-20 w-35 opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+              className="h-15 md:h-12 w-35 opacity-90 group-hover:opacity-100 transition-opacity duration-300"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.style.display = 'none';
