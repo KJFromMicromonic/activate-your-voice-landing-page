@@ -16,20 +16,20 @@ const Sponsors: React.FC = () => {
           <div className="h-[1px] w-12 bg-[#00f2ff]/30 mx-auto"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {SPONSORS.map(sponsor => (
               <a
                 key={sponsor.id}
                 href={sponsor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex flex-col items-center justify-center p-12 md:p-16 bg-[#05070a] border border-white/10 hover:border-[#00f2ff]/40 transition-all duration-500 overflow-hidden"
+                className="group relative flex flex-col items-center justify-center p-6 md:p-9 bg-[#05070a] border border-white/10 hover:border-[#00f2ff]/40 transition-all duration-500 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#00f2ff]/5 via-transparent to-[#7000ff]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Logo Container */}
-                <div className="h-48 md:h-64 flex items-center justify-center mb-8 relative z-10 w-full">
+                <div className="h-24 md:h-36 flex items-center justify-center mb-4 relative z-10 w-full">
                   <img
                     src={sponsor.logo}
                     alt={sponsor.name}
@@ -41,7 +41,7 @@ const Sponsors: React.FC = () => {
                       if (parent && !parent.querySelector('.fallback-text')) {
                         const textFallback = document.createElement('span');
                         textFallback.innerText = sponsor.name;
-                        textFallback.className = "fallback-text text-white font-orbitron font-bold text-2xl md:text-3xl tracking-widest text-center";
+                        textFallback.className = "fallback-text text-white font-orbitron font-bold text-lg md:text-xl tracking-widest text-center";
                         parent.appendChild(textFallback);
                       }
                     }}
@@ -49,19 +49,19 @@ const Sponsors: React.FC = () => {
                 </div>
 
                 {/* Partner Info */}
-                <div className="text-center relative z-10 space-y-3">
-                  <h3 className="font-orbitron font-bold text-lg text-white/90 group-hover:text-[#00f2ff] transition-colors tracking-wider uppercase">
+                <div className="text-center relative z-10 space-y-1.5">
+                  <h3 className="font-orbitron font-bold text-sm text-white/90 group-hover:text-[#00f2ff] transition-colors tracking-wider uppercase">
                     {sponsor.name}
                   </h3>
 
                   {/* Description based on sponsor */}
-                  <p className="text-slate-400 font-mono-space text-sm leading-relaxed max-w-md mx-auto">
+                  <p className="text-slate-400 font-mono-space text-xs leading-relaxed max-w-sm mx-auto">
                     {sponsor.name === 'Speechmatics' && 'Real-time speech recognition and voice AI technology'}
                     {sponsor.name === 'Backboard.io' && 'AI-powered development tools to streamline your workflow'}
                     {sponsor.name === 'STATION F' && "World's largest startup campus and innovation hub"}
                   </p>
 
-                  <div className="flex items-center justify-center gap-2 text-[#00f2ff]/60 group-hover:text-[#00f2ff] transition-colors text-xs font-mono-space pt-2">
+                  <div className="flex items-center justify-center gap-1 text-[#00f2ff]/60 group-hover:text-[#00f2ff] transition-colors text-[9px] font-mono-space pt-0.5">
                     <span>🔗</span>
                     <span className="tracking-wider">{sponsor.url.replace('https://', '').replace('www.', '')}</span>
                   </div>
@@ -73,9 +73,9 @@ const Sponsors: React.FC = () => {
             ))}
 
             {/* TBA Card */}
-            <div className="group relative flex flex-col items-center justify-center p-12 md:p-16 bg-[#05070a]/50 border-2 border-dashed border-white/10 hover:border-[#7000ff]/30 transition-all">
-               <div className="text-5xl font-orbitron font-bold text-white/10 group-hover:text-[#7000ff]/40 transition-colors mb-6">TBA</div>
-               <span className="font-mono-space text-sm text-slate-600 tracking-widest uppercase text-center">
+            <div className="group relative flex flex-col items-center justify-center p-6 md:p-9 bg-[#05070a]/50 border-2 border-dashed border-white/10 hover:border-[#7000ff]/30 transition-all">
+               <div className="text-2xl font-orbitron font-bold text-white/10 group-hover:text-[#7000ff]/40 transition-colors mb-3">TBA</div>
+               <span className="font-mono-space text-[11px] text-slate-600 tracking-widest uppercase text-center">
                  More Partners<br/>Initializing...
                </span>
             </div>

@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Sponsors from './components/Sponsors';
-import Tracks from './components/Tracks';
 import Prizes from './components/Prizes';
 import Speakers from './components/Speakers';
 import CTA from './components/CTA';
@@ -18,7 +17,6 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <About />
-        <Tracks />
         <Sponsors />
         <Speakers />
         <Prizes />

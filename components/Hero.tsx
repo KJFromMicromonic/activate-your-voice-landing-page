@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 waveform-bg">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-32 waveform-bg">
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00f2ff]/10 rounded-full blur-[120px]"></div>
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         {/* Refined, static event info */}
         <div className="flex items-center justify-center gap-4 mb-8 text-xs font-mono-space tracking-[0.4em] text-[#00f2ff]/60 uppercase">
           <span className="w-8 h-px bg-[#00f2ff]/30"></span>
-          <span>ÉCOLE 42, PARIS // FEB 28 @ 15:00</span>
+          <span>BUILDERS FACTORY, PARIS // FEB 28 - MAR 1</span>
           <span className="w-8 h-px bg-[#00f2ff]/30"></span>
         </div>
 
@@ -56,8 +56,8 @@ const Hero: React.FC = () => {
         </div>
         
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-12 font-light leading-relaxed">
-          Architecting the future of Neural Dialogue <span className="text-white font-semibold">24-Hours</span> 
-          <span className="text-[#7000ff] font-semibold"> 100 Builders</span> <span className="text-[#F52727] font-semibold">€100,000 prize pool.</span>
+          Architecting the future of Neural Dialogue <span className="text-white font-semibold">24-Hours.</span> <br/>
+          <span className="text-[#7000ff] font-semibold"> 100 Builders</span> in a Hacker House. <span className="text-[#F52727] font-semibold">€100,000 prize pool.</span>
         </p>
 
         {/* Countdown Timer - Refined Appearance */}
@@ -121,16 +121,16 @@ const Hero: React.FC = () => {
 
             {/* 42 Entrepreneurs - Co-Hosted By */}
             <a
-              href="https://www.42entrepreneurs.com"
+              href="https://buildersfactory.fr/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col items-center justify-center gap-4 p-8 border border-white/10 bg-white/[0.02] hover:border-[#00ff95]/50 hover:bg-[#00ff95]/5 transition-all duration-300"
             >
               <span className="text-[10px] font-mono-space tracking-[0.3em] text-slate-500 uppercase">Co-Hosted By</span>
               <img
-                src="Partners/42Entrepreneurs_White.png"
-                alt="42 Entrepreneurs"
-                className="h-16 md:h-20 w-auto opacity-80 group-hover:opacity-100 transition-opacity"
+                src="Logos/BuildersFactory.png"
+                alt="Builders Factory"
+                className="h-[4.8rem] md:h-[6rem] w-auto opacity-80 group-hover:opacity-100 transition-opacity"
               />
             </a>
           </div>

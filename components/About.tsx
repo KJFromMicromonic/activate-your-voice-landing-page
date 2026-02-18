@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import GlitchText from './GlitchText';
+import Tracks from './Tracks';
 
 const About: React.FC = () => {
   const [expandedPhase, setExpandedPhase] = useState<string | null>('phase1');
@@ -22,10 +23,10 @@ const About: React.FC = () => {
             />
             <div className="space-y-6 text-slate-400 leading-relaxed text-lg">
               <p>
-                In 2026, the interface is no longer a screen—it is a conversation. <span className="text-[#00f2ff] font-bold">Activate Your Voice</span> is an intensive <span className="text-white font-semibold">24-hour hackathon</span> designed to push the boundaries of Voice Agent technology.
+                In 2026, the interface is no longer a screen—it is a conversation. <span className="text-[#00f2ff] font-bold">Activate Your Voice</span> is a<span className="text-white font-semibold">24-hour hackathon</span> and an <span className="text-white font-semibold">immersive residency</span> designed to push the boundaries of Voice Agent technology.
               </p>
               <p>
-                From Feb 28 to March 1, join a collective of builders in Paris to solve the most complex challenges in real-time vocal synthesis and neural dialogue. 
+              From Feb 28 to March 1, join a curated collective of builders taking over a 600m² founders house to solve the most complex challenges in real-time vocal synthesis and neural dialogue.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
                 <div className="p-6 glass-card border-l-4 border-l-[#00ff95]">
@@ -34,7 +35,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="p-6 glass-card border-l-4 border-l-[#00f2ff]">
                   <h4 className="font-orbitron font-bold text-white mb-2 text-sm tracking-widest uppercase">The Venue</h4>
-                  <p className="font-mono-space text-xs text-slate-400">École 42<br/>96 Boulevard Bessières, Paris</p>
+                  <p className="font-mono-space text-xs text-slate-400">Builders Factory<br/>18 Rue la Condamine, 75017 Paris</p>
                 </div>
               </div>
             </div>
@@ -43,7 +44,7 @@ const About: React.FC = () => {
           <div className="lg:w-1/2 relative w-full">
             <div className="relative z-10 rounded-sm overflow-hidden border border-white/10 group shadow-2xl h-[400px] w-full">
               <iframe 
-                src="https://maps.google.com/maps?q=42%20Ecole%2096%20Boulevard%20Bessi%C3%A8res%20Paris&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.4606818248667!2d2.320992376497409!3d48.88755697133622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f002a693d8d%3A0x2ce28ec74b8f8626!2sBuilders%20Factory!5e0!3m2!1sen!2sfr!4v1771389315273!5m2!1sen!2sfr"
                 className="w-full h-full grayscale invert-[0.9] hue-rotate-[180deg] contrast-[1.2] brightness-[0.8] opacity-60 group-hover:opacity-90 transition-opacity duration-700"
                 style={{ border: 0 }}
                 allowFullScreen
@@ -54,7 +55,7 @@ const About: React.FC = () => {
               <div className="absolute bottom-6 left-6 p-4 bg-[#05070a]/95 backdrop-blur-md border border-[#00f2ff]/30 shadow-[0_0_20px_rgba(0,242,255,0.1)] z-20">
                 <span className="font-mono-space text-[10px] text-[#00f2ff] tracking-widest uppercase flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#00f2ff] animate-ping"></span>
-                  SIGNAL_DETECTED: 42 Ecole, Paris
+                  SIGNAL_DETECTED: Builders Factory, Paris
                 </span>
               </div>
             </div>
@@ -63,6 +64,8 @@ const About: React.FC = () => {
             <div className="absolute -bottom-4 -right-4 w-12 h-12 border-b border-r border-[#00f2ff]/50"></div>
           </div>
         </div>
+
+        <Tracks />
 
         {/* Detailed Schedule Section */}
         <div>
@@ -120,10 +123,6 @@ const About: React.FC = () => {
                     <span className="text-[#7000ff] mt-1">•</span>
                     <span>Partners demo</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#7000ff] mt-1">•</span>
-                    <span>Dorahack team submission</span>
-                  </li>
                 </ul>
               </div>
 
@@ -164,13 +163,13 @@ const About: React.FC = () => {
               <div className="px-8 md:px-12 pb-8 md:pb-12">
                 <div className="h-px bg-gradient-to-r from-[#00f2ff] to-transparent mb-8"></div>
                 <div className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
-                <div className="text-[#00f2ff] font-audiowide text-lg">2:00 PM – 3:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
+                <div className="text-[#00f2ff] font-audiowide text-lg whitespace-nowrap">2:00 PM – 3:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Check-in & welcome coffee</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
-                <div className="text-[#00f2ff] font-audiowide text-lg">3:00 PM – 3:30 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
+                <div className="text-[#00f2ff] font-audiowide text-lg whitespace-nowrap">3:00 PM – 3:30 PM</div>
                 <div>
                   <div className="text-white font-bold mb-2">Opening ceremony</div>
                   <ul className="space-y-1 text-slate-400 font-mono-space text-sm">
@@ -202,29 +201,30 @@ const About: React.FC = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
-                <div className="text-[#00f2ff] font-audiowide text-lg">3:30 PM – 4:15 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
+                <div className="text-[#00f2ff] font-audiowide text-lg whitespace-nowrap">3:30 PM – 4:15 PM</div>
                 <div className="text-slate-300 font-mono-space">Partners workshop</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
-                <div className="text-[#00f2ff] font-audiowide text-lg">4:15 PM – 8:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
+                <div className="text-[#00f2ff] font-audiowide text-lg whitespace-nowrap">4:15 PM – 8:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Working session #1</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
-                <div className="text-[#00f2ff] font-audiowide text-lg">8:00 PM – 9:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
+                <div className="text-[#00f2ff] font-audiowide text-lg whitespace-nowrap">8:00 PM – 9:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Dinner</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
-                <div className="text-[#00f2ff] font-audiowide text-lg">8:30 PM – 11:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
+                <div className="text-[#00f2ff] font-audiowide text-lg whitespace-nowrap">8:30 PM – 11:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Working session #2</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
-                <div className="text-[#00f2ff] font-audiowide text-lg">11:00 PM</div>
-                <div className="text-slate-300 font-mono-space">Venue closes</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00f2ff]/30 transition-colors">
+                <div className="text-[#00f2ff] font-audiowide text-lg whitespace-nowrap">11:00 PM</div>
+                <div className="text-slate-300 font-mono-space">Overnight stay available — no beds, but couches and rest spaces throughout the house.
+                </div>
               </div>
             </div>
               </div>
@@ -251,38 +251,38 @@ const About: React.FC = () => {
               <div className="px-8 md:px-12 pb-8 md:pb-12">
                 <div className="h-px bg-gradient-to-r from-[#00ff95] to-transparent mb-8"></div>
                 <div className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">9:00 AM</div>
-                <div className="text-slate-300 font-mono-space">Check-in and coffee</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">9:00 AM</div>
+                <div className="text-slate-300 font-mono-space">Breakfast</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">9:00 AM – 12:30 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">9:00 AM – 12:30 PM</div>
                 <div className="text-slate-300 font-mono-space">Working session #3</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">12:30 PM – 1:30 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">12:30 PM – 1:30 PM</div>
                 <div className="text-slate-300 font-mono-space">Lunch</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">12:30 PM – 5:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">12:30 PM – 5:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Final working session</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">4:30 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">4:30 PM</div>
                 <div className="text-slate-300 font-mono-space">Jury arrival time</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">5:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">5:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Project submission</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">5:00 PM – 6:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">5:00 PM – 6:00 PM</div>
                 <div>
                   <div className="text-white font-bold mb-2">Demo & jury fire</div>
                   <ul className="space-y-1 text-slate-400 font-mono-space text-sm">
@@ -298,23 +298,23 @@ const About: React.FC = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">6:00 PM – 6:30 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">6:00 PM – 6:30 PM</div>
                 <div className="text-slate-300 font-mono-space">Top 6 teams final demo</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">6:30 PM – 7:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">6:30 PM – 7:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Jury deliberation & networking</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">7:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">7:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Result announcement and sponsor specific prizes</div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
-                <div className="text-[#00ff95] font-audiowide text-lg">7:00 PM – 8:00 PM</div>
+              <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 border border-white/5 bg-white/[0.02] p-6 hover:border-[#00ff95]/30 transition-colors">
+                <div className="text-[#00ff95] font-audiowide text-lg whitespace-nowrap">7:00 PM – 8:00 PM</div>
                 <div className="text-slate-300 font-mono-space">Cocktail celebration</div>
               </div>
             </div>

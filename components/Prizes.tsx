@@ -49,7 +49,7 @@ const Prizes: React.FC = () => {
               <span className="text-4xl">🎁</span>
               <h3 className="text-[#7000ff] font-orbitron font-bold text-2xl md:text-3xl tracking-widest">TOOLING & API CREDITS</h3>
             </div>
-            <div className="text-[#7000ff] font-audiowide text-2xl md:text-3xl">€80,000</div>
+            <div className="text-[#7000ff] font-audiowide text-2xl md:text-3xl">€90,000+</div>
           </div>
           <div className="h-px bg-gradient-to-r from-[#7000ff] to-transparent mb-8"></div>
 
@@ -134,17 +134,6 @@ const Prizes: React.FC = () => {
                   <h4 className="text-white font-audiowide text-xl mb-2">Speechmatics Excellence Award</h4>
                   <p className="text-[#ff10f0] font-orbitron text-2xl mb-2">$3,000</p>
                   <p className="text-slate-400 font-mono-space text-sm">Additional credits for 1 exceptional team</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="border border-white/10 bg-white/[0.02] p-8 hover:border-[#ff10f0]/30 transition-colors">
-              <div className="flex items-start gap-4 mb-3">
-                <span className="text-3xl">🥉</span>
-                <div className="flex-grow">
-                  <h4 className="text-white font-audiowide text-xl mb-2">Expedite Innovation Prize</h4>
-                  <p className="text-[#ff10f0] font-orbitron text-2xl mb-2">TBC + O1 Via</p>
-                  <p className="text-slate-400 font-mono-space text-sm">Service access for 1 team</p>
                 </div>
               </div>
             </div>

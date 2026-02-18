@@ -35,6 +35,13 @@ export const SPONSORS: Sponsor[] = [
     logo: 'Partners/StationF.png',
     tier: 'Platinum',
     url: 'https://www.stationf.co'
+  },
+  {
+    id: '4',
+    name: 'Builders Factory',
+    logo: 'Logos/BF2.png',
+    tier: 'Platinum',
+    url: 'https://buildersfactory.fr/'
   }
 ];
 
