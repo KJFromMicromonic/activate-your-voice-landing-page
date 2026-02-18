@@ -73,6 +73,7 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center gap-8 font-mono-space text-sm tracking-widest">
           <a href="#about" className="hover:text-[#00f2ff] transition-colors uppercase">Mission</a>
           <a href="#tracks" className="hover:text-[#7000ff] transition-colors uppercase">Theme</a>
+          <a href="#venue" className="hover:text-[#00ff95] transition-colors uppercase">Venue</a>
           <a href="#speakers" className="hover:text-[#00ff95] transition-colors uppercase">Judges</a>
           <a href="#prizes" className="hover:text-[#ff10f0] transition-colors uppercase">Rewards</a>
           <a 
@@ -109,6 +110,7 @@ const Navbar: React.FC = () => {
       <div className="flex flex-col items-center justify-center h-full gap-8 font-mono-space text-lg tracking-widest">
         <a href="#about" onClick={closeMobileMenu} className="hover:text-[#00f2ff] transition-colors uppercase">Mission</a>
         <a href="#tracks" onClick={closeMobileMenu} className="hover:text-[#7000ff] transition-colors uppercase">Theme</a>
+        <a href="#venue" onClick={closeMobileMenu} className="hover:text-[#00ff95] transition-colors uppercase">Venue</a>
         <a href="#speakers" onClick={closeMobileMenu} className="hover:text-[#00ff95] transition-colors uppercase">Judges</a>
         <a href="#prizes" onClick={closeMobileMenu} className="hover:text-[#ff10f0] transition-colors uppercase">Rewards</a>
         <a

@@ -14,6 +14,15 @@ export const COLORS = {
   pink: '#ff10f0',
 };
 
+/** Image paths for the Builders Factory venue carousel (place in public/Venue/). */
+export const VENUE_IMAGES: string[] = [
+  'Venue/venue1.avif',
+  'Venue/venue2.jpg',
+  'Venue/venue3.jpg',
+  'Venue/venue4.jpg',
+  'Venue/venue5.jpg',
+];
+
 export const SPONSORS: Sponsor[] = [
   { 
     id: '1', 
