@@ -17,10 +17,10 @@ export const COLORS = {
 /** Image paths for the Builders Factory venue carousel (place in public/Venue/). */
 export const VENUE_IMAGES: string[] = [
   'Venue/venue1.avif',
-  'Venue/venue2.jpg',
-  'Venue/venue3.jpg',
-  'Venue/venue4.jpg',
-  'Venue/venue5.jpg',
+  'Venue/venue2.webp',
+  'Venue/venue3.webp',
+  'Venue/venue4.webp',
+  'Venue/venue5.webp',
 ];
 
 export const SPONSORS: Sponsor[] = [
