@@ -29,7 +29,7 @@ const Prizes: React.FC = () => {
           </div>
           <div className="h-px bg-gradient-to-r from-[#00f2ff] to-transparent mb-8"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="border border-white/10 bg-white/[0.02] p-6">
               <div className="text-white font-audiowide text-xl mb-2">3 Winning Teams</div>
               <p className="text-slate-400 font-mono-space text-sm">1 winner per track</p>
@@ -37,6 +37,10 @@ const Prizes: React.FC = () => {
             <div className="border border-white/10 bg-white/[0.02] p-6">
               <div className="text-[#00f2ff] font-audiowide text-3xl mb-2">€3,300</div>
               <p className="text-slate-400 font-mono-space text-sm">€1,000 per winning team</p>
+            </div>
+            <div className="border border-white/10 bg-white/[0.02] p-6">
+              <div className="text-white font-audiowide text-xl mb-2">Speaking at FOST</div>
+              <p className="text-slate-400 font-mono-space text-sm">Invitation to speak at API Days&apos; FOST Conferences + 5 tickets to FOST per winning team</p>
             </div>
           </div>
         </div>
@@ -152,6 +156,11 @@ const Prizes: React.FC = () => {
           <p className="text-slate-300 font-mono-space text-lg leading-relaxed">
             Recognition from industry leaders, VCs and the global AI Collective community
           </p>
+          <div className="mt-6 p-4 border border-[#00ff95]/20 bg-white/[0.02]">
+            <p className="text-slate-300 font-mono-space text-sm">
+              <span className="text-[#00ff95] font-orbitron font-semibold">QuickSort</span> has agreed to interview and is open to hire selected winners.
+            </p>
+          </div>
         </div>
 
         <div className="mt-20 p-8 border border-white/5 bg-white/[0.01] text-center max-w-4xl mx-auto">

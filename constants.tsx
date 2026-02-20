@@ -51,6 +51,13 @@ export const SPONSORS: Sponsor[] = [
     logo: 'Logos/BF2.png',
     tier: 'Platinum',
     url: 'https://buildersfactory.fr/'
+  },
+  {
+    id: '5',
+    name: 'API Days',
+    logo: 'Logos/apidays.png',
+    tier: 'Platinum',
+    url: 'https://www.apidays.global'
   }
 ];
 
@@ -99,6 +106,24 @@ export const SPEAKERS: Speaker[] = [
     bio: ' AI Builder, Software Architect & Team Enabler Experienced in scaling engineering teams and implementing end-to-end Software and AI solutions across cloud and on-premise environments.',
     image: 'https://media.licdn.com/dms/image/v2/D4E03AQE0zeV3pTztiQ/profile-displayphoto-scale_400_400/B4EZvYAKgJGgAk-/0/1768855481205?e=1772668800&v=beta&t=0GNc1wJg3IAIndAQThnbBQMLAT1BvGceRe1KbH4fNNs',
     socials: { linkedin: 'https://www.linkedin.com/in/mohamed-ahmednah-19313116/' }
+  },
+  {
+    id: '6',
+    name:'Salim Louanjli',
+    role:'Pre-Seed VC',
+    company:'Campus Fund',
+    bio:'Pre-Seed VC at Campus Fund, focused on building the future of AI and startups.',
+    image:'https://media.licdn.com/dms/image/v2/C5603AQH8ABLKR5QBNw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1649406922052?e=1773273600&v=beta&t=0JA1qG4aSR_Tx3HEB9aFkj1-upjLd5pMtwHYmteRWuc',
+    socials: { linkedin: 'https://www.linkedin.com/in/salim-louanjli/' }
+  },
+  {
+    id: '7',
+    name:'Sylvain Cordier',
+    role:'CPTO',
+    company:'Stairling',
+    bio:'20+ year IT veteran (15 leading multidisciplinary teams) delivering AI, DevOps & cloud projects.',
+    image:'https://media.licdn.com/dms/image/v2/D5603AQEz2_X28-_XUw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727710393657?e=1773273600&v=beta&t=tSNfmyQXxg-jTd4rrZhcsZFafjqfh4xlbjr-ypBUJtg',
+    socials: { linkedin: 'https://www.linkedin.com/in/sylvain-cordier/' }
   }
 ];
 
