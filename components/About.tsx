@@ -23,7 +23,7 @@ const About: React.FC = () => {
             />
             <div className="space-y-6 text-slate-400 leading-relaxed text-lg">
               <p>
-                In 2026, the interface is no longer a screen—it is a conversation. <span className="text-[#00f2ff] font-bold">Activate Your Voice</span> is a<span className="text-white font-semibold">24-hour hackathon</span> and an <span className="text-white font-semibold">immersive residency</span> designed to push the boundaries of Voice Agent technology.
+                In 2026, the interface is no longer a screen—it is a conversation. <span className="text-[#00f2ff] font-bold">Activate Your Voice</span> is a <span className="text-white font-semibold">24-hour hackathon</span> and an <span className="text-white font-semibold">immersive residency</span> designed to push the boundaries of Voice Agent technology.
               </p>
               <p>
               From Feb 28 to March 1, join a curated collective of builders taking over a 600m² founders house to solve the most complex challenges in real-time vocal synthesis and neural dialogue.
