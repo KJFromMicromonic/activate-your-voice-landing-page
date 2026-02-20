@@ -4,7 +4,7 @@ import GlitchText from './GlitchText';
 import Tracks from './Tracks';
 
 const About: React.FC = () => {
-  const [expandedPhase, setExpandedPhase] = useState<string | null>('phase1');
+  const [expandedPhase, setExpandedPhase] = useState<string | null>(null);
 
   const togglePhase = (phase: string) => {
     setExpandedPhase(expandedPhase === phase ? null : phase);
