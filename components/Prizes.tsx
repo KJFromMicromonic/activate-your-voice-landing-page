@@ -144,6 +144,43 @@ const Prizes: React.FC = () => {
           </div>
         </div>
 
+        {/* Career Pathways Section */}
+        <div className="mb-16 border border-[#ffaa00]/30 bg-gradient-to-br from-[#ffaa00]/5 to-transparent p-8 md:p-12 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#ffaa00] to-transparent"></div>
+          <div className="flex items-center gap-4 mb-6">
+            <span className="text-4xl">🧭</span>
+            <h3 className="text-[#ffaa00] font-orbitron font-bold text-2xl md:text-3xl tracking-widest">CAREER PATHWAYS</h3>
+          </div>
+          <div className="h-px bg-gradient-to-r from-[#ffaa00] to-transparent mb-6"></div>
+
+          <p className="text-slate-300 font-mono-space text-sm md:text-base mb-6">
+            Confirmed interview opportunities for winning teams with leading AI companies.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="border border-white/10 bg-white/[0.02] p-6 hover:border-[#ffaa00]/30 transition-colors">
+              <div className="text-white font-audiowide text-lg mb-2">QuickSort</div>
+              <p className="text-slate-400 font-mono-space text-sm">
+                AI Engineer interviews for selected winners.
+              </p>
+            </div>
+
+            <div className="border border-white/10 bg-white/[0.02] p-6 hover:border-[#ffaa00]/30 transition-colors">
+              <div className="text-white font-audiowide text-lg mb-2">Stairling</div>
+              <p className="text-slate-400 font-mono-space text-sm">
+                Interviews for AI Engineer, Data Engineer and developers with Vibe Coding skills.
+              </p>
+            </div>
+
+            <div className="border border-white/10 bg-white/[0.02] p-6 hover:border-[#ffaa00]/30 transition-colors">
+              <div className="text-white font-audiowide text-lg mb-2">Speechmatics</div>
+              <p className="text-slate-400 font-mono-space text-sm">
+                Machine Learning and Software Engineer interview opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Recognition Section */}
         <div className="border border-[#00ff95]/30 bg-gradient-to-br from-[#00ff95]/5 to-transparent p-8 md:p-12 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#00ff95] to-transparent"></div>
@@ -156,11 +193,6 @@ const Prizes: React.FC = () => {
           <p className="text-slate-300 font-mono-space text-lg leading-relaxed">
             Recognition from industry leaders, VCs and the global AI Collective community
           </p>
-          <div className="mt-6 p-4 border border-[#00ff95]/20 bg-white/[0.02]">
-            <p className="text-slate-300 font-mono-space text-sm">
-              <span className="text-[#00ff95] font-orbitron font-semibold">QuickSort</span> has agreed to interview and is open to hire selected winners.
-            </p>
-          </div>
         </div>
 
         <div className="mt-20 p-8 border border-white/5 bg-white/[0.01] text-center max-w-4xl mx-auto">
