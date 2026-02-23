@@ -124,6 +124,24 @@ export const SPEAKERS: Speaker[] = [
     bio:'20+ year IT veteran (15 leading multidisciplinary teams) delivering AI, DevOps & cloud projects.',
     image:'https://media.licdn.com/dms/image/v2/D5603AQEz2_X28-_XUw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727710393657?e=1773273600&v=beta&t=tSNfmyQXxg-jTd4rrZhcsZFafjqfh4xlbjr-ypBUJtg',
     socials: { linkedin: 'https://www.linkedin.com/in/sylvain-cordier/' }
+  },
+  {
+    id: '8',
+    name:'Aliénor Dartiguenave',
+    role:'Director Of AI Products',
+    company:'Foundever',
+    bio:'Driving Foundever’s AI strategy and product portfolio to transform customer experience and operations for 150,000 employees and global clients through scalable, intelligent solutions.',
+    image:'https://media.licdn.com/dms/image/v2/D4E03AQFkiPq5KyI6WA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1680623104213?e=1773273600&v=beta&t=rCj7hFtqJ9y48O_qVD6nVgB7MABfflAeR6_HHyhOt_g',
+    socials: { linkedin: 'https://www.linkedin.com/in/aliénor-dartiguenave-4969a98b/' }
+  },
+  {
+    id: '9',
+    name:'Robin Guignard-Perret',
+    role:'CEO',
+    company:'Tellers.ai',
+    bio:'Building the future of video creation and storytelling at Tellers.AI',
+    image:'https://media.licdn.com/dms/image/v2/D4E03AQGP59fVrSo42w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1706861829571?e=1773273600&v=beta&t=PfzvG5kD1cIkt6BPXD3PM8olwwH-0lr7LaxygJMV0aw',
+    socials: { linkedin: 'https://www.linkedin.com/in/rguignar/' }
   }
 ];
 
