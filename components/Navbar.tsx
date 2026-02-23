@@ -77,12 +77,12 @@ const Navbar: React.FC = () => {
           <a href="#speakers" className="hover:text-[#00ff95] transition-colors uppercase">Judges</a>
           <a href="#prizes" className="hover:text-[#ff10f0] transition-colors uppercase">Rewards</a>
           <a 
-            href="https://luma.com/activateyourvoice" 
+            href="https://platform.activateyourvoice.tech" 
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 border border-[#00f2ff] text-[#00f2ff] hover:bg-[#00f2ff] hover:text-[#05070a] transition-all shadow-[0_0_10px_rgba(0,242,255,0.3)] hover:shadow-[0_0_20px_rgba(0,242,255,0.6)] font-bold tracking-widest"
           >
-            REGISTER
+            LOGIN
           </a>
         </div>
         
@@ -114,13 +114,13 @@ const Navbar: React.FC = () => {
         <a href="#speakers" onClick={closeMobileMenu} className="hover:text-[#00ff95] transition-colors uppercase">Judges</a>
         <a href="#prizes" onClick={closeMobileMenu} className="hover:text-[#ff10f0] transition-colors uppercase">Rewards</a>
         <a
-          href="https://luma.com/activateyourvoice"
+          href="https://platform.activateyourvoice.tech"
           target="_blank"
           rel="noopener noreferrer"
           onClick={closeMobileMenu}
           className="mt-4 px-8 py-3 border border-[#00f2ff] text-[#00f2ff] hover:bg-[#00f2ff] hover:text-[#05070a] transition-all shadow-[0_0_10px_rgba(0,242,255,0.3)] font-bold tracking-widest"
         >
-          REGISTER
+          LOGIN
         </a>
       </div>
     </div>
