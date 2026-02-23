@@ -193,6 +193,29 @@ const Prizes: React.FC = () => {
           <p className="text-slate-300 font-mono-space text-lg leading-relaxed">
             Recognition from industry leaders, VCs and the global AI Collective community
           </p>
+
+          <ul className="mt-6 space-y-3 text-slate-300 font-mono-space text-sm md:text-base">
+            <li>
+              <span className="mr-2">🏢</span>
+              <span className="font-semibold">6-month founders residency:</span>{' '}
+              6 months of coworking at 50% off (€125/month instead of €250).
+            </li>
+            <li>
+              <span className="mr-2">🏠</span>
+              <span className="font-semibold">Always-on access:</span>{' '}
+              Unlimited access to the HQ 7 days a week, plus full access to internal events and active cohorts.
+            </li>
+            <li>
+              <span className="mr-2">🥙</span>
+              <span className="font-semibold">Monthly ecosystem touchpoints:</span>{' '}
+              1 lunch per month with an ecosystem guest and 1 office hour per month with a sector mentor (legal, GTM, PR, etc.).
+            </li>
+            <li>
+              <span className="mr-2">🔆</span>
+              <span className="font-semibold">Community rituals:</span>{' '}
+              Our favorite monthly rituals like &quot;pick my brain&quot; and &quot;open your network&quot;.
+            </li>
+          </ul>
         </div>
 
         <div className="mt-20 p-8 border border-white/5 bg-white/[0.01] text-center max-w-4xl mx-auto">
