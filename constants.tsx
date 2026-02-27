@@ -142,6 +142,15 @@ export const SPEAKERS: Speaker[] = [
     bio:'Building the future of video creation and storytelling at Tellers.AI',
     image:'https://media.licdn.com/dms/image/v2/D4E03AQGP59fVrSo42w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1706861829571?e=1773273600&v=beta&t=PfzvG5kD1cIkt6BPXD3PM8olwwH-0lr7LaxygJMV0aw',
     socials: { linkedin: 'https://www.linkedin.com/in/rguignar/' }
+  },
+  {
+    id: '10',
+    name: 'Katrin Redmann',
+    role:'Head of Transformation',
+    company:'SAP France',
+    bio:'I initiate, build and accelerate tech innovation ecosystems with impact 🇫🇷 🇩🇪 🇪🇺🌐',
+    image:'https://media.licdn.com/dms/image/v2/C5603AQFBNJMtURoQkw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1662579089814?e=1773878400&v=beta&t=28KgpVHjLsjjYQ2FLNSgdhQNSpKORk-eoQ9DikyIfUA',
+    socials: { linkedin: 'https://www.linkedin.com/in/katrinredmann/' }
   }
 ];
 
